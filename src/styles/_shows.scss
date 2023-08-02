@@ -1,0 +1,15 @@
+.shows {
+
+    padding: 2vw 5.6vw;
+
+    &_list {
+        display: grid;
+        grid-template-columns: 1ft 1ft 1ft;
+
+        // &_item {
+        //     img {
+
+        //     }
+        // }
+    }
+}
