@@ -1,15 +1,55 @@
+@use 'variaveis';
+
 .shows {
 
     padding: 2vw 5.6vw;
 
-    &_list {
+    &__list {
+        margin-top: 44px;
         display: grid;
-        grid-template-columns: 1ft 1ft 1ft;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
 
-        // &_item {
-        //     img {
+        &--is-active {
+            display: grid;
+        }
 
-        //     }
-        // }
+        &__item {
+             
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+                position:relative;
+                top:0
+            }
+
+            img:hover {
+                top: -4px;
+                box-shadow: 0 4px 4px #040714;
+                transition: all .2s ease-in-out;
+            }
+        }
     }
+
+    &__tabs {
+
+        display: flex;
+        justify-content: center;
+
+            &__button {
+
+                color: variaveis.$cortextoSecundario;
+                font-size: 15px;
+                border: none;
+                padding-bottom: 5px;
+                background: none;
+                text-transform: uppercase;
+                margin: 0 1vw;
+
+                &--is--active {
+                 border-bottom: 3px solid variaveis.$cortextoSecundario;
+                }
+            }   
+        }
+
 }
