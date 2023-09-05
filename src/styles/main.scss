@@ -2,6 +2,8 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
+@use 'available-devices';
+@use 'faq';
 
 @font-face {
     font-family: Avenir;
@@ -40,7 +42,6 @@ body {
 
 .text {
     @include text;
-    text-align: left
 }
 
 .text--big {
