@@ -40,6 +40,7 @@ body {
 
 .text {
     @include text;
+    text-align: left
 }
 
 .text--big {
@@ -112,7 +113,8 @@ body {
 
         &__text_container {
             padding: absolute;
-            top: 5.6vw;
+            top: 0;
+            left: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
